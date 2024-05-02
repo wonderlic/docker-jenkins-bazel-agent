@@ -5,7 +5,7 @@ USER root
 
 RUN \
 	apt-get update && \
-	apt-get install -y --no-install-recommends zstd g++ build-essential libsecret-1-0 && \
+	apt-get install -y --no-install-recommends zstd g++ build-essential libsecret-1-0 psmisc uuid-runtime && \
 	rm -rf /var/lib/apt/lists/*
 
 RUN \
