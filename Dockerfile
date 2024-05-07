@@ -5,7 +5,7 @@ USER root
 
 RUN \
 	apt-get update && \
-	apt-get install -y --no-install-recommends zstd g++ build-essential libsecret-1-0 psmisc uuid-runtime && \
+	apt-get install -y --no-install-recommends zstd g++ build-essential libsecret-1-0 python3-minimal psmisc uuid-runtime && \
 	rm -rf /var/lib/apt/lists/*
 
 RUN \
